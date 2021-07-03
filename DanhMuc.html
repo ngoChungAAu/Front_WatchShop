@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danh Mục</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/styleDanhMuc.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+	<!-- css price -->
+</head>
+<body>
+<!-- wrapper  -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- logo -->
+				<div class="col-xl-1 col-lg-1"><img src="images/logo.jpg"></div>
+				<!-- /logo -->
+				<!-- menu-top -->
+				<div class="col-xl-9 col-lg-9 menu-top text-center">
+					<ul>
+						<li><a href="#">Giới thiệu</a></li>
+						<li><a href="#">Đồng hồ nam</a></li>
+						<li><a href="#">Đồng hồ nữ</a></li>
+						<li><a href="#">Đồng hồ đôi</a></li>
+						<li><a href="#">Phụ kiện</a>
+							<ul class="sub-menu">
+								<li><a href="#">Dây Da Hirsch</a></li>
+								<li><a href="#">Dây Da ZRC</a></li>
+								<li><a href="#">Hộp Đồng Hồ</a></li>
+								<li><a href="#">D.Vụ In Logo Lên Đồng Hồ</a></li>
+								<li><a href="#">Khắc Laser Lên Đồng Hồ</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Tin tức</a></li>
+						<li><a href="#">Liên hệ</a></li>
+					</ul>
+				</div>
+				<!-- menu-top -->
+				<!-- menu-icon -->
+				<div class="col-xl-2 col-lg-2 menu-icon">
+					<ul>
+						<li><a class="fas fa-search search-icon">
+								<div class="search-box">
+									<form>
+										<input type="text" name="" placeholder="Tìm kiếm...">
+									</form>
+								</div>
+							</a>
+						</li>
+						<li><a href="#" class="fas fa-user"></a></li>
+						<li>
+							<a href="#" class="fas fa-shopping-bag"></a>
+							<div class="nu">11</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /menu-icon -->
+			</div>
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- titlee -->
+	<div class="titlee">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 tit">
+					<a href="#" class="a1"><h5>TRANG CHỦ</h5></a>
+					<h5>&nbsp;/&nbsp;</h5>
+					<a href="#" class="a2"><h5>CỬA HÀNG</h5></a>
+				</div>
+				<div class="col-xl-5 text-right kq">
+					<h6>Hiển thị....sản phẩm</h6>
+				</div>
+				<div class="col-xl-3 dis text-center">
+					<select name="" id="">
+				    <option value="">Mặc định</option>
+				    <option value="">Mức độ phủ biến</option>
+				    <option value="">Sản phẩm mới</option>
+				    <option value="">Giá: thấp đến cao</option>
+				    <option value="">Giá: cao đến thấp</option>
+				  </select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /titlee -->
+	<!-- list-content -->
+	<div class="lcontent">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3">
+					<div class="left-sidebar">
+						<!--category-products-->
+						<div class="cate-prod">
+							<h5>DANH MỤC SẢN PHẨM</h5>
+							<div class="lbox">
+								<ul>
+									<li><a href="#">Đồng hồ nam</a></li>
+									<li><a href="#">Đồng hồ nữ</a></li>
+									<li><a href="#">Đồng hồ đôi</a></li>
+									<li class="neo"><a href="#">Phụ kiện</a>
+										<i class="fas fa-angle-down text-right" id="showToggle"></i>
+										<div class="llbox" id="boxShow">
+											<ul class="lsub-menu">
+												<li><a href="#">Dây Da Hirsch</a></li>
+												<li><a href="#">Dây Da ZRC</a></li>
+												<li><a href="#">Hộp Đồng Hồ</a></li>
+												<li><a href="#">D.Vụ In Logo Lên Đồng Hồ</a></li>
+												<li><a href="#">Khắc Laser Lên Đồng Hồ</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--category-products-->
+
+						<!--brand-->
+						<div class="list">
+							<h5>Thương hiệu</h5>
+							<div class="lbox">
+								<ul>
+									<li><a href="#">Casio</a></li>
+									<li><a href="#">Citizen</a></li>
+									<li><a href="#">Casio</a></li>
+									<li><a href="#">Citizen</a></li>
+									<li><a href="#">Casio</a></li>
+									<li><a href="#">Citizen</a></li>
+									<li><a href="#">Casio</a></li>
+									<li><a href="#">Citizen</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--brand-->
+						<!-- price-->
+						<div class="list">
+							<h5>Lọc the giá</h5>
+							<div class="slidecontainer">
+							  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+							  <p class="text-center">Cao nhất: <span id="demo"></span></p>
+							  <input class="loc" type="submit" value="Lọc">
+							</div>
+						</div>
+						<!-- /price -->
+						<!--chất liệu dây-->
+						<div class="list">
+							<h5>CHẤT LIỆU DÂY</h5>
+							<div class="lbox">
+								<ul>
+									<li><a href="#">Dây da</a></li>
+									<li><a href="#">Dây kim loại</a></li>
+									<li><a href="#">Dây cao su</a></li>
+									<li><a href="#">Dây vải</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/chất liệu dây-->
+						<!--chất liệu mặt kính-->
+						<div class="list">
+							<h5>CHẤT LIỆU MẶT KÍNH</h5>
+							<div class="lbox">
+								<ul>
+									<li><a href="#">Kính cứng</a></li>
+									<li><a href="#">Kính sapphire</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/chất liệu dây-->
+						<!--chất liệu mặt kính-->
+						<div class="list">
+							<h5>Hình dạng mặt số</h5>
+							<div class="lbox">
+								<ul>
+									<li><a href="#">Hình chữ nhật</a></li>
+									<li><a href="#">Hình tròn</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--/chất liệu dây-->
+					</div>
+				</div>
+				<!-- product -->
+				<div class="col-xl-9">
+					<div class="container-fluid">
+						<div class="row lpoduct">
+							<div class="col-xl-4 col-lg-4 lprodd">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 lprodd">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 lprodd">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 lprodd">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 lprodd">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-cart-arrow-down fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4">
+								<div class="lprod">
+									<div class="lprod-icon">
+										<a href="#" title="Thêm vào giỏ">
+											<i class="fas fa-plus-circle fa-2x"></i>
+										</a>
+										<div class="lsale">10%</div>
+									</div>
+									<a><img src="images/men1.jpg"></a>
+									<div class="ldescription">
+										<p>ĐỒNG HỒ NAM</p>
+										<div class="lcode">MW01</div>
+										<div class="lname"><a href="#">ĐỒNG HỒ LOUIS ERARD NAM PIN DÂY DA</a></div>
+										<div class="lprice">
+											<del>20,217,000 ₫</del>
+											<span>18,195,300 ₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row page">
+							<a class="fas fa-angle-double-left fa-2x prevv"></a>
+							<a class="fas fa-angle-double-right fa-2x nextt"></a>	
+						</div>
+					</div>
+				</div>
+				<!-- /product -->
+			</div>
+		</div>
+	</div>
+	<!-- /list-content -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 foot1">
+					<div class="foot-1-cont">
+						<p>ĐIỀU HƯỚNG</p>
+						<ul class="menu-bot">
+							<li><a href="">Trang chủ</a></li>
+							<li><a href="">Giới thiệu</a></li>
+							<li><a href="">Sản phẩm</a></li>
+							<li><a href="">Điểm tin hữu ích</a></li>
+							<li><a href="">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 foot2">
+					<div class="foot-2-cont">
+						<img src="images/logo.jpg">
+						<p>Phong cách - Thời thượng - Sang trọng - Quý phái</p>
+						<form>
+							<input type="text" name="" placeholder="Đăng kí nhận thông báo qua email">
+							<button>Đăng kí</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 foot3">
+					<div class="foot-3-cont">
+						<p class="foot-tit">THÔNG TIN LIÊN HỆ</p>
+						<p class="addr">136 Cầu Diễn - Minh Khai - Bắc Từ liêm - Hà Nôi</p>
+						<p class="time">Time: 8h - 21h. Tất cả các ngày trong tuần</p>
+						<p class="phone">0123456789</p>
+						<p class="mail">abcdef@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">© All rights reserved - Ngô Chung Á ÂU</div>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /wrapper -->
+<!-- script -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<!-- script submenu -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#showToggle").click(click(2000,"linear",function(){
+			$("#boxShow").slideToggle();
+		})
+	});
+	$("button").click(function(){
+  $("p").html("Hello <b>world</b>!");
+});
+</script>
+	<!-- script price -->
+<script type="text/javascript">
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+	  output.innerHTML = this.value;
+	}
+</script>
+<!-- /script -->
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danh Mục</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/styleGioHang.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+	<!-- css price -->
+</head>
+<body>
+<!-- wrapper  -->
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- logo -->
+				<div class="col-xl-1 col-lg-1"><img src="images/logo.jpg"></div>
+				<!-- /logo -->
+				<!-- menu-top -->
+				<div class="col-xl-9 col-lg-9 menu-top text-center">
+					<ul>
+						<li><a href="#">Giới thiệu</a></li>
+						<li><a href="#">Đồng hồ nam</a></li>
+						<li><a href="#">Đồng hồ nữ</a></li>
+						<li><a href="#">Đồng hồ đôi</a></li>
+						<li><a href="#">Phụ kiện</a>
+							<ul class="sub-menu">
+								<li><a href="#">Dây Da Hirsch</a></li>
+								<li><a href="#">Dây Da ZRC</a></li>
+								<li><a href="#">Hộp Đồng Hồ</a></li>
+								<li><a href="#">D.Vụ In Logo Lên Đồng Hồ</a></li>
+								<li><a href="#">Khắc Laser Lên Đồng Hồ</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Tin tức</a></li>
+						<li><a href="#">Liên hệ</a></li>
+					</ul>
+				</div>
+				<!-- menu-top -->
+				<!-- menu-icon -->
+				<div class="col-xl-2 col-lg-2 menu-icon">
+					<ul>
+						<li><a class="fas fa-search search-icon">
+								<div class="search-box">
+									<form>
+										<input type="text" name="" placeholder="Tìm kiếm...">
+									</form>
+								</div>
+							</a>
+						</li>
+						<li><a href="#" class="fas fa-user"></a></li>
+						<li>
+							<a href="#" class="fas fa-shopping-bag"></a>
+							<div class="nu">11</div>
+						</li>
+					</ul>
+				</div>
+				<!-- /menu-icon -->
+			</div>
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- cont -->
+	<div class="cont">
+		<!-- container -->
+		<div class="container">
+			<div class="row justify-content-center gcont">
+				<div class="col-xl-5">
+					<div class="card">
+						<div class="card-header"><h2>Khách hàng</h2></div>
+						<div class="card-body">
+							<!-- form -->
+							<form action="${pageContext.request.contextPath}/luu_don_hang" method="post">
+								<div class="form-group">
+									<label for="name">Tên khách hàng:</label>
+									<input type="text" class="form-control" id="name" name="name">
+								</div>
+								<div class="form-group">
+									<label for="email">Địa chỉ email:</label>
+									<input type="email" class="form-control" id="email" name="email">
+								</div>
+								<div class="form-group">
+									<label for="phone">Điện thoại liên hệ:</label>
+									<input type="text" class="form-control" id="phone" name="phone">
+								</div>
+								<div class="form-group">
+									<label for="address">Địa chỉ giao hàng:</label>
+									<input type="text" class="form-control" id="address" name="address">
+								</div>
+								<button type="submit" class="btn btn-warning">Gửi đơn hàng</button>	
+							</form>
+							<!-- /form -->
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-xl-7">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">STT</th>
+								<th scope="col">Tên sản phẩm</th>
+								<th scope="col">Số lượng</th>
+								<th scope="col">Đơn giá</th>
+							</tr>
+						</thead>
+						<tbody>
+							<c:forEach items="${GIO_HANG.sanPhamTrongGioHangs }" var="item" varStatus="loop"> 
+					    
+							    <tr>
+									<th scope="row">${loop.index + 1}</th>
+									<td>${item.tenSanPham }</td>
+									<td>${item.soluong }</td>
+									<td>${item.giaban }</td>
+								</tr>
+							</c:forEach>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /cont -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 foot1">
+					<div class="foot-1-cont">
+						<p>ĐIỀU HƯỚNG</p>
+						<ul class="menu-bot">
+							<li><a href="">Trang chủ</a></li>
+							<li><a href="">Giới thiệu</a></li>
+							<li><a href="">Sản phẩm</a></li>
+							<li><a href="">Điểm tin hữu ích</a></li>
+							<li><a href="">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 foot2">
+					<div class="foot-2-cont">
+						<img src="images/logo.jpg">
+						<p>Phong cách - Thời thượng - Sang trọng - Quý phái</p>
+						<form>
+							<input type="text" name="" placeholder="Đăng kí nhận thông báo qua email">
+							<button>Đăng kí</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 foot3">
+					<div class="foot-3-cont">
+						<p class="foot-tit">THÔNG TIN LIÊN HỆ</p>
+						<p class="addr">136 Cầu Diễn - Minh Khai - Bắc Từ liêm - Hà Nôi</p>
+						<p class="time">Time: 8h - 21h. Tất cả các ngày trong tuần</p>
+						<p class="phone">0123456789</p>
+						<p class="mail">abcdef@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">© All rights reserved - Ngô Chung Á ÂU</div>
+		</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /wrapper -->
+<!-- script -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+<!-- /script -->
+</body>
+</html>
